@@ -1,0 +1,105 @@
+.two-heart1, .two-heart2, .two-heart3,
+.two-heart4, .two-heart5, .two-heart6{
+    position: absolute;
+    z-index: 1;
+    opacity: 0%;
+    overflow: hidden;
+}
+
+.two-heart1{
+    top: 5rem;
+    left: 5%;
+    animation: animate 20s linear 1s infinite;
+    overflow: hidden;
+}
+.two-heart2{
+    top: 5rem;
+    left: 21%;
+    animation: animate 25s linear 4s infinite;
+    overflow: hidden;
+}
+.two-heart3{
+    top: 5rem;
+    left: 37%;
+    animation: animate 15s linear infinite;
+    overflow: hidden;
+}
+.two-heart4{
+    top: 5rem;
+    left: 53%;
+    animation: animate 45s linear 4s infinite;
+    overflow: hidden;
+}
+.two-heart5{
+    top: 5rem;
+    left: 69%;
+    animation: animate 25s linear 3s infinite;
+    overflow: hidden;
+}
+.two-heart6{
+    top: 5rem;
+    left: 85%;
+    animation: animate 20s linear 2s infinite;
+    overflow: hidden;
+}
+
+
+.h{
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+    overflow: hidden;
+}
+
+
+
+
+@media screen and (max-width: 760px)
+{
+
+    .two-heart1, .two-heart2, .two-heart3,
+    .two-heart4, .two-heart5, .two-heart6{
+        width: 30px;
+        height: 30px;
+    }
+
+    .h{
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+}
+
+
+@keyframes animate{
+    0%{
+        top: 5rem;
+        opacity: 0%;
+        overflow: hidden;
+    }
+    20%{
+        opacity: 40%;
+        transform: translateX(-20px) rotate(45deg);
+        overflow: hidden;
+    }
+    40%{
+        opacity: 60%;
+        transform: translateX(-20px) rotate(120deg);
+        overflow: hidden;
+    }
+    60%{
+        opacity: 80%;
+        transform: translateX(-20px) rotate(45deg);
+        overflow: hidden;
+    }
+    80%{
+        opacity: 100%;
+        transform: translateX(-20px) rotate(120deg);
+        overflow: hidden;
+    }
+    100%{
+        top: 110%;
+        overflow: hidden;
+    }
+}
